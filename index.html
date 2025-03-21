@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>
+                <strong>Olá, mundo!</strong>
+            </h2>
+            <img src="imagens/pexels-bruthethe-3035998 (1).jpg" alt="image/teste">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad voluptate autem, cumque sunt natus exercitationem possimus quisquam accusantium minima itaque nobis maiores? Cupiditate aliquid voluptatum dolorum non repellendus officiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem voluptatem aspernatur pariatur deserunt architecto quibusdam voluptas! Necessitatibus iure eligendi voluptate omnis veritatis, reiciendis doloribus optio, voluptatum sit ducimus neque maxime.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum consequuntur numquam exercitationem tempora, velit adipisci minus a illum, earum aliquam at eum, iure neque quo ea et quia ducimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam numquam veniam adipisci, temporibus aperiam, ratione debitis doloribus enim nulla odio deserunt corrupti iusto voluptates reiciendis doloremque! Repudiandae, quia qui.</p>
+        </article>
+    </main>
+    <script>
+     function clickMenu(){
+       if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+       } else {
+        itens.style.display = 'block'
+       }
+      }
+      function mudouTamanho(){
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+
+        }
+
+    </script>
+</body>
+</html>
