@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body,html{
+    background-color: rgb(230, 228, 228);
+}
+
+article{
+    margin: 30px;
+    background-color: white;
+   
+}
+
+.imgperfil{
+    display: flex;
+    justify-content: center;
+}
+
+.imgperfil > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.descricao{
+    display: flex;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    flex-flow: column;
+    align-items: center;
+    justify-items: center;
+    transform: translateX(150px);
+}
+
+.descricao > h2{
+    font-size: 2em;
+
+}
+
+.descricao > p{
+   margin: 25px;
+}
+
