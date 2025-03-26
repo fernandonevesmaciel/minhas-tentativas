@@ -6,43 +6,76 @@
 }
 
 body,html{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(230, 228, 228);
 }
 
 article{
+    width: 60vw;
+    height: 90vh;
     margin: 30px;
+    border-radius: 20px;
     background-color: white;
-   
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.477);
 }
 
-.imgperfil{
+article:hover{
+    box-shadow: 10px 10px 10px 10px rgba(4, 223, 243, 0.512);
+}
+
+.container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.imgperfil > img{
-    width: 200px;
-    height: 200px;
+div > .imgperfil{
+    width: 130px;
+    height: 130px;
     border-radius: 200px;
+    margin: 20px;
 }
 
 .descricao{
     display: flex;
-    text-align: center;
-    width: 500px;
-    height: 300px;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    transform: translateX(150px);
+    text-align: justify;
+    width: 260px;
+    height: 100px;
+    margin:0px;
+    padding: 0px;
+
 }
 
 .descricao > h2{
-    font-size: 2em;
+    font-size: 1em;
 
 }
 
 .descricao > p{
-   margin: 25px;
+    font-size: 0.8em;
+   margin: 5px;
+   text-indent: 15px;
 }
 
+.habilidades {
+   display: flex;
+   flex-direction:column;
+   justify-content: center;
+   align-content: flex-end;
+   text-align: center;
+   transform: translatey(180px);
+}
+
+.habilidades > h2{
+    font-size: 1em;
+}
+
+.habilidades > ul{
+    font-size: 0.8em;
+    list-style-type: none;
+}
