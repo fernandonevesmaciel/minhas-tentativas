@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/* todas as demais midias*/
+/*typical device breakpoints
+pequenas telas: até 600px
+celular: de 600px até 768px 
+tablet: 768px até 992px
+desktop: 992 até 1200px
+grandes telas: acima de 1200px
+*/
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -172,4 +182,103 @@ section > a >button:hover{
     background-color: #AE4147;
     cursor: pointer;
     border: 1px solid black;
+}
+
+
+@media screen and (min-width:768px) {
+    .servicos > div > h3{
+        color: darkred;
+        font-size: 2em;
+        font-weight:bold;
+        font-family: "Anton", sans-serif;
+        font-weight: 400px;
+        font-style: bold;
+        text-align: center;
+        margin: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+    
+    div > ul {
+        list-style: none; /* Remove o marcador padrão */
+        padding-left: 0;
+
+    }
+    
+   div> ul > li::before {
+        content: "progress_activity"; /* Nome do ícone do Google Fonts */
+        font-family: "Material Symbols Outlined";
+        font-size: 20px; /* Tamanho do ícone */
+        margin-right: 8px; /* Espaço entre o ícone e o texto */
+        vertical-align: middle;
+        color: white; /* Cor do ícone */
+        
+    }
+    
+    .servicos > div > ul > li{
+        font-size: 1.5em;
+        margin-right: 10px;
+    }
+
+    .projetos{
+        background-color:black;
+        height: 1000px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items:stretch;
+        text-align: center;
+    }
+    
+    .projetos > div > h3{
+        color: darkred;
+        font-size: 2em;
+        font-weight:bold;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: bold;
+        margin: 8px;
+        align-self: center;
+    }
+        
+    .projetos > div > h4{
+        color: white;
+        font-size: 1.5em;
+        margin: 15px;
+        text-align: justify;
+    }
+    
+    .projetos > div > p{
+        color: white;
+        text-align: left;
+        margin: 15px;
+        text-indent: 8px;
+    }
+    
+    .projetos > a >button{
+        background-color: #A60303;
+        color: white;
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+        margin: 20px;
+        border: none;
+    }
+
+    .projetos > div#item{
+        flex: 1 1 auto;
+        flex-basis: auto;
+    }
+}
+
+@media screen and (min-width:992px){
+    main{
+        width: 80vw;
+        display: block;
+        align-items: center;
+        justify-content: auto;
+        margin-left: 180px;
+    }
 }
