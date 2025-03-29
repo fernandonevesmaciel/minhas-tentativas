@@ -122,7 +122,7 @@ li::before {
 
 .projetos{
     background-color:black;
-    height: 700px;
+    height: 800px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
