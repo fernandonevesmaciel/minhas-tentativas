@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.apresentacao{
+    background-color:#f1f3f4;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items:center;
+    text-align: center;
+}
+
+section > div#logo > img{
+    order: 0;
+    flex-basis: 100px;
+    align-self:center;
+    flex: 1 1 100px;
+}
+
+
+section > div#apresentacao{
+    order: 1;
+    align-self: center;
+    margin: 20px;
+    text-align: center;
+}
+
+
+section > div#apresentacao > h2{
+    color: darkblue;
+    font-weight:bold;
+    font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+}
+
+section > div#apresentacao > a >button{
+    background-color: darkblue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+section > div#apresentacao > a >button:hover{
+    background-color: rgba(0, 0, 139, 0.737);
+    cursor: pointer;
+}
