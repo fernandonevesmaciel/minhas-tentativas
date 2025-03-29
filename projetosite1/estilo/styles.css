@@ -33,7 +33,7 @@ section > div#apresentacao{
 
 
 section > div#apresentacao > h2{
-    color: darkblue;
+    color: darkred;
     font-weight:bold;
     font-family: "Anton", sans-serif;
   font-weight: 400;
@@ -41,15 +41,135 @@ section > div#apresentacao > h2{
 }
 
 section > div#apresentacao > a >button{
-    background-color: darkblue;
+    background-color: #A60303;
     color: white;
     height: 50px;
     width: 200px;
     border-radius: 20px;
     margin: 15px;
+    border: none;
 }
 
 section > div#apresentacao > a >button:hover{
-    background-color: rgba(0, 0, 139, 0.737);
+    background-color: #AE4147;
     cursor: pointer;
+    border: 1px solid black;
+}
+
+.servicos{
+    background-color: black;
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.servicos > div > h3{
+    color: darkred;
+    font-size: 2em;
+    font-weight:bold;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin: 15px;
+}
+
+ul {
+    list-style: none; /* Remove o marcador padrão */
+    padding-left: 0;
+}
+
+li::before {
+    content: "progress_activity"; /* Nome do ícone do Google Fonts */
+    font-family: "Material Symbols Outlined";
+    font-size: 20px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle;
+    color: white; /* Cor do ícone */
+}
+
+.servicos > ul > li{
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.empresa{
+    background-color:#f1f3f4;
+    height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.empresa > div > h3{
+    color: darkred;
+    font-size: 1.5em;
+    font-weight:bold;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin: 15px;
+}
+
+.empresa > div > p{
+    align-self: center;
+    font-size: 1em;
+    text-align: center;
+    flex: auto;
+}
+
+.projetos{
+    background-color:black;
+    height: 600px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.projetos > div > h3{
+    color: darkred;
+    font-size: 2em;
+    font-weight:bold;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    margin: 8px;
+}
+
+.projetos> div > span{
+    color:red
+}
+
+.projetos > div > h4{
+    color: white;
+    font-size: 1.5em;
+    margin: 15px;
+    text-align: left;
+}
+
+.projetos > div > p{
+    color: white;
+    text-align: left;
+    margin: 15px;
+    text-indent: 8px;
+}
+
+.projetos > a >button{
+    background-color: #A60303;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 15px;
+    border: none;
+}
+
+section > a >button:hover{
+    background-color: #AE4147;
+    cursor: pointer;
+    border: 1px solid black;
 }
