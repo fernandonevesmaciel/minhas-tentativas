@@ -31,9 +31,10 @@ main > .menulanches{
     gap: 30px;
     
 }
-main > .menulanches > div > img{
+main > .menulanches > div  > img{
     width: 80px;
     height: 80px;
+    padding: 2px;
 }
 
 main > section > div{
@@ -42,4 +43,5 @@ main > section > div{
     border: 1px solid black;
     padding: 2px;
     text-align: center;
+    font-size: 1em;
 }
