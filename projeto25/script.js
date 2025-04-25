@@ -69,14 +69,14 @@ function carregar(){
     // Exemplo: se a pessoa escolher "falhas inversores" e "pioneiro"
     else if (opcao1 === "3" && opcao2 === "5") {
         res.innerHTML = `
-        <p>📘 Manual de Falhas do inversor CF500 disponível para download abaixo:</p>
-            <a href="#" download>Clique aqui para baixar</a>
+         <p>📘 Manual de Falhas do inversor CF500 disponível para download abaixo:</p>
+            <a href="https://drive.google.com/file/d/1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27/view?usp=drive_link" target="_blank">Clique aqui para baixar</a>
 
              <p>📘 Manual de Falhas do inversor G120 disponível para download abaixo:</p>
-            <a href="#" download>Clique aqui para baixar</a>
+            <a href="https://drive.google.com/file/d/1p7ADCT1Bb1OXRdescIfHRG5oVLgEV8PG/view?usp=drive_link" target="_blank">Clique aqui para baixar</a>
 
-             <p>📘 Manual de Falhas dos Driver's disponível para download abaixo:</p>
-            <a href="#" download>Clique aqui para baixar</a>
+            <p>📘 Manual de Falhas dos Driver's disponível para download abaixo:</p>
+            <a href="https://drive.google.com/file/d/1a130ZaVmxltA0jwvLRWDT0FucwR1TJwU/view?usp=drive_link" target="_blank">Clique aqui para baixar</a>
 
     `}
 
@@ -142,7 +142,7 @@ function carregar(){
     </table>
 
     <p> Para fazer download das senhas em PDF clique no link abaixo:<p>
-    <a href="#" download>Clique aqui para baixar</a>
+    <a href="https://drive.google.com/file/d/1KqnimC12YXJsh-3jE_fWduF522ALIBKW/view?usp=drive_link" target="_blank">Clique aqui para baixar</a>
 
 
     `}else if (opcao1 === "4" && opcao2 === "2" || opcao2 === "3" || opcao2 === "4" ) {
