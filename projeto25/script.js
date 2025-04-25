@@ -45,7 +45,7 @@ function carregar(){
     else if (opcao1 === "3" && opcao2 === "2") {
         res.innerHTML = `
         <p>📘 Manual de Falhas do inversor CF500 disponível para download abaixo:</p>
-            <a href="https://drive.google.com/file/d/1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
+            <a href="https://drive.google.com/uc?export=download&id=1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27" target="_blank">Clique aqui para baixar</a>
             <iframe src="https://drive.google.com/file/d/1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27/preview" width="300" height="400"></iframe>
 
     `}
@@ -53,7 +53,7 @@ function carregar(){
     else if (opcao1 === "3" && opcao2 === "3") {
         res.innerHTML = `
         <p>📘 Manual de Falhas do inversor G120 disponível para download abaixo:</p>
-            <a href="https://drive.google.com/file/d/1Kl1z_Qw_OyfQjBbwgZPqMleRUB5JLRXi/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
+            <a href="https://drive.google.com/uc?export=download&id=1Kl1z_Qw_OyfQjBbwgZPqMleRUB5JLRXi" target="_blank">Clique aqui para baixar</a>
             <iframe src="https://drive.google.com/file/d/1p7ADCT1Bb1OXRdescIfHRG5oVLgEV8PG/preview" width="300" height="400"></iframe>
 
 
@@ -62,7 +62,7 @@ function carregar(){
     else if (opcao1 === "3" && opcao2 === "4") {
         res.innerHTML = `
         <p>📘 Manual de Falhas dos Driver's disponível para download abaixo:</p>
-            <a href="https://drive.google.com/file/d/1p7ADCT1Bb1OXRdescIfHRG5oVLgEV8PG/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
+            <a href="https://drive.google.com/uc?export=download&id=1a130ZaVmxltA0jwvLRWDT0FucwR1TJwU" target="_blank">Clique aqui para baixar</a>
             <iframe src="https://drive.google.com/file/d/1a130ZaVmxltA0jwvLRWDT0FucwR1TJwU/preview" width="300" height="400"></iframe>
 
     `}
@@ -70,13 +70,14 @@ function carregar(){
     else if (opcao1 === "3" && opcao2 === "5") {
         res.innerHTML = `
          <p>📘 Manual de Falhas do inversor CF500 disponível para download abaixo:</p>
-            <a href="https://drive.google.com/file/d/1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
+            <a href="https://drive.google.com/uc?export=download&id=1KnfXvqmRlTM79CxOt_Hq88E6Dh_nSk27" target="_blank">Clique aqui para baixar</a>
 
             <p>📘 Manual de Falhas do inversor G120 disponível para download abaixo:</p>
-            <a href="https://drive.google.com/file/d/1Kl1z_Qw_OyfQjBbwgZPqMleRUB5JLRXi/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
+            <a href="https://drive.google.com/uc?export=download&id=1Kl1z_Qw_OyfQjBbwgZPqMleRUB5JLRXi" target="_blank">Clique aqui para baixar</a>
 
-            <a href="https://drive.google.com/file/d/1p7ADCT1Bb1OXRdescIfHRG5oVLgEV8PG/view?usp=sharing" target="_blank">Clique aqui para baixar</a>
-
+            <p>📘 Manual de Falhas do inversor G120 disponível para download abaixo:</p>
+            <a href="https://drive.google.com/uc?export=download&id=1Kl1z_Qw_OyfQjBbwgZPqMleRUB5JLRXi" target="_blank">Clique aqui para baixar</a>
+            
     `}
 
     else if (opcao1 === "4" && opcao2 === "5") {
