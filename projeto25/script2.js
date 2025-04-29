@@ -188,6 +188,48 @@ function carregar() {
     <p>Com base nesses parâmetros acesse o manual.</p>
             `
         );
+
+        criarLinha(
+            "Comissionamento para novos motores",
+            `
+            <table>
+        <thead>
+            <tr>
+                <th>Parâmetros</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P10</td>
+                <td>1 =  para colocar em comissionameto</td>
+            </tr>
+            <tr>
+                <td>P305</td>
+                <td>Corrente do motor</td>
+            </tr>
+             <tr>
+                <td>P307</td>
+                <td>Potência do motor</td>
+            </tr>
+             <tr>
+                <td>P311</td>
+                <td>Velocidade em RPM do motor</td>
+            </tr>
+             <tr>
+                <td>P1900</td>
+                <td>2 = identificar o motor</td>
+            </tr>
+             <tr>
+                <td>P3900</td>
+                <td>0 = Salvar e completar o comissionamento</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Com base nesses parâmetros acesse o manual.</p>
+            `
+        );
     }else if(opcao === "3"){
         criarLinha(
             "Manual do inversor ",
