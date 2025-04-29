@@ -1,73 +1,66 @@
 @charset "UTF-8";
 
-body{
-    background:rgb(70, 142, 236);
+/* Estilo Geral */
+body {
+    background: rgb(70, 142, 236);
     font-style: normal;
     overflow-y: auto;
+    margin: 0;
+    padding: 0;
 }
 
-header{
+header {
     text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
-section{
+section {
     background-color: white;
-    width: 90vw;
+    width: 90%;
+    max-width: 800px; /* Limite de largura em telas grandes */
     height: auto;
-    margin: auto;
+    margin: 20px auto;
     display: flex;
     flex-flow: column;
     align-items: center;
     border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
-#section1{
-    width: 70vw;
-    text-align: center;
-    margin: auto;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-#section2{
-    width: 70vw;
-    text-align: center;
-    margin: auto;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-footer{
-    position: center bottom;
-    text-align: center;
-    background-color:rgb(70, 142, 236); 
-    color: white;
-    font-style:normal;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+/* Campos de seleção */
+#section1, #section2 {
     width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-}
-
-div#botao{
-    margin: 10px;
-}
-
-#res{
+    max-width: 800px;
     text-align: center;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Botão de busca */
+div#botao {
     margin: 10px;
 }
 
+/* Área de resultado */
+#res {
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+}
+
+/* Estilo dos parágrafos dentro do resultado */
 #res p {
     font-size: 1.2em;
     color: #333;
     font-weight: bold;
 }
 
+/* Estilo dos links de download */
 #res a {
     display: inline-block;
     margin-top: 10px;
@@ -84,6 +77,7 @@ div#botao{
     background-color: #005f73;
 }
 
+/* Tabela dentro de res */
 #res table {
     margin: 30px auto;
     border-collapse: collapse;
@@ -106,6 +100,78 @@ div#botao{
     background-color: #f9f9f9;
 }
 
-#res iframe{
+/* Estilo de iframe */
+#res iframe {
     border-radius: 5px;
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+    margin-top: 10px;
+}
+
+/* Linha de resultado */
+.linha {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+/* Título */
+.titulo {
+    font-weight: bold;
+    flex: 1;
+    max-width: 80%;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* Botão + */
+.botao-toggle {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.botao-toggle:hover {
+    background-color: #005f73;
+}
+
+/* Conteúdo escondido */
+.conteudo {
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto 0 auto;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Rodapé fixo */
+footer {
+    text-align: center;
+    background-color: rgb(70, 142, 236);
+    color: white;
+    font-style: normal;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    font-size: 0.9em;
 }
