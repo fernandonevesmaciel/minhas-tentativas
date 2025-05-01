@@ -192,6 +192,8 @@ function carregar() {
         criarLinha(
             "Comissionamento para novos motores",
             `
+            <p> Para fazer o comissionamento coloque o inversor em modo manual (Hand on), faz as alterações dos parâmetros, complete o comissionamento. Depois volte o inversor para modo Remoto.
+            </p>
             <table>
         <thead>
             <tr>
