@@ -38,7 +38,7 @@ function toggleSenha() {
     let res = document.getElementById('res');
     let senhaInput = document.getElementById('senha').value;
   
-    if(senhaInput === 'Familia-31'){
+    if(senhaInput === 'Familia@-31'){
       window.location.href = 'https://www.instagram.com/accounts/login/';
     } else {
       res.innerHTML = 'Senha incorreta';
