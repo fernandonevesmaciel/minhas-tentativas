@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mostrar/Ocultar Senha</title>
+  <style>
+    input[type="password"], input[type="text"] {
+      padding-right: 30px;
+    }
+
+    .senha-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .toggle-icone {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+  <!-- Importando os ícones do Google -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <p>Digite sua senha:</p>
+    <div class="senha-container">
+      <input type="password" id="senha">
+      <span class="material-icons toggle-icone" onclick="toggleSenha()" id="iconeSenha">visibility_off</span>
+    </div>
+   
+  </div>
+
+  <div id="res"></div>
+
+  <script>
+    
+    const senha = document.getElementById('senha');
+
+    function toggleSenha() {
+      const icone = document.getElementById('iconeSenha');
+
+      if (senha.type === 'password') {
+        senha.type = 'text';
+        icone.textContent = 'visibility';
+      } else {
+        senha.type = 'password';
+        icone.textContent = 'visibility_off';
+      }
+    }
+
+   
+
+  </script>
+</body>
+</html>

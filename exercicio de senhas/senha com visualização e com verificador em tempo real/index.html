@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificador de Senha ao Digitar</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Digite sua senha:</h2>
+  <div class="senha-container">
+    <input type="password" id="senha" oninput="verificarSenha()">
+    <span class="material-icons toggle-icone" onclick="toggleSenha()" id="iconeSenha">visibility_off</span>
+  </div>
+
+  <ul id="criterios">
+    <li id="minuscula">Letra minúscula</li>
+    <li id="maiuscula">Letra maiúscula</li>
+    <li id="numero">Número</li>
+    <li id="especial">Símbolo especial (!@#$...)</li>
+    <li id="tamanho">Mínimo 8 caracteres</li>
+  </ul>
+  <div id="login">
+    <input type="button" value="ENTRAR" onclick="entrar()">
+  </div>
+  <div id="res">
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
